@@ -28,6 +28,11 @@ Welcome to the repository for Team 1's Lab Notebook, created as part of the Soft
    - This section is dedicated to documenting the lab assignments completed by our team. Each assignment includes a detailed description of the procedures followed, along with any relevant code snippets or output.
      - **Assignment 1:** Detailed steps for creating and publishing a C program that functions as a basic calculator.
      - **Assignment 2:** Instructions for fixing a button issue in a mind reader application and the process of creating a pull request to submit the solution.
+     - **Assignment 3:** Lab Assignment 3: Git Branching, Merging, and Conflict Resolution.
+
+###  Latex Assignments
+   - **Assignment 4:** Lab Assignment 1: Create a LaTeX Document
+   - **Assignment 5:** Lab Assignment 2: Create a CV Using LaTeX
 
 ## How to Compile
 
