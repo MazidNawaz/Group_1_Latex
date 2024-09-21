@@ -52,7 +52,7 @@
         \item \textbf{Name: Ratul Mondal} 
         \item \textbf{Reg No.: 233002410593} 
         \item \textbf{Course: Bsc. It Data Science} 
-        \item \textbf{GitHub Link:} \url{}
+        \item \textbf{GitHub Link:} \url{https://github.com/CLOUD77782}
     \end{itemize}
 
     \item \textbf{Member 3:} 
@@ -76,7 +76,7 @@
         \item \textbf{Name: Safa Ahmad} 
         \item \textbf{Reg No.: 233002410559} 
         \item \textbf{Course: BSc AI} 
-        \item \textbf{GitHub Link:} \url{}https://github.com/safaahmad7
+        \item \textbf{GitHub Link:} \url{https://github.com/safaahmad7}
     \end{itemize}
 \end{itemize}
 
@@ -264,6 +264,200 @@ submitButton.setCursor(new Cursor(Cursor.HAND_CURSOR)); // Change cursor when ho
 \end{verbatim}
 
 These modifications include changing the button's label to \texttt{"Chin Tapak Dum Dum"}, resizing the button, adjusting the font style, and altering the button's color scheme to enhance its appearance and usability.
+
+\section{Lab Assignment 3: Git Branching, Merging, and Conflict Resolution}
+
+\textbf{Task:} Demonstrate proficiency in Git branching, merging, and conflict resolution in a step-by-step process.
+
+\subsection*{Procedure}
+\begin{enumerate}[label=\arabic*.]
+    \item \textbf{Create a GitHub Repository:}
+    \begin{itemize}
+        \item Create a new repository called \texttt{git-advanced} on GitHub.
+    \end{itemize}
+    
+    \item \textbf{Clone the Repository:}
+    \begin{itemize}
+        \item Clone the repository to your local machine using the command: \texttt{git clone <repository-url>}
+    \end{itemize}
+    
+    \item \textbf{Create and Switch to a New Branch (feature-1):}
+    \begin{itemize}
+        \item Use the command \texttt{git checkout -b feature-1} to create and switch to a new branch named \texttt{feature-1}.
+    \end{itemize}
+    
+    \item \textbf{Add and Commit Changes on feature-1:}
+    \begin{itemize}
+        \item Create a file \texttt{shared.txt} and add the content:
+        \begin{verbatim}
+This is a shared file.
+Line 1: Original text.
+Line 2: Original text.
+        \end{verbatim}
+        \item Stage and commit the changes: \texttt{git commit -m "Add shared.txt with original text"}
+    \end{itemize}
+    
+    \item \textbf{Push the Branch to GitHub:} 
+    \begin{itemize}
+        \item Push the \texttt{feature-1} branch to GitHub: \texttt{git push origin feature-1}
+    \end{itemize}
+
+    \item \textbf{Create Another Branch (feature-2):}
+    \begin{itemize}
+        \item Switch to \texttt{feature-2} branch using the command: \texttt{git checkout -b feature-2}
+    \end{itemize}
+
+    \item \textbf{Modify the Shared File on feature-2:}
+    \begin{itemize}
+        \item Modify the second line of \texttt{shared.txt}:
+        \begin{verbatim}
+Line 2: Modified text in feature-2.
+        \end{verbatim}
+        \item Stage and commit the changes: \texttt{git add shared.txt}
+        \item Commit with a descriptive message: \texttt{git commit -m "Modify Line 2 in feature-2"}
+        \item Push the changes: \texttt{git push origin feature-2}
+    \end{itemize}
+
+    \item \textbf{Switch Back to feature-1 and Modify:}
+    \begin{itemize}
+        \item Switch back to \texttt{feature-1} using: \texttt{git checkout feature-1}
+        \item Modify the second line on \texttt{shared.txt}:
+        \begin{verbatim}
+Line 2: Modified text in feature-1.
+        \end{verbatim}
+        \item Stage and commit the changes: \texttt{git add shared.txt}
+        \item Commit with a descriptive message: \texttt{git commit -m "Modify Line 2 in feature-1"}
+        \item Push the changes: \texttt{git push origin feature-1}
+    \end{itemize}
+
+    \item \textbf{Merge feature-1 into main:}
+    \begin{itemize}
+        \item Switch to the \texttt{main} branch: \texttt{git checkout main}
+        \item Merge the \texttt{feature-1} branch into the \texttt{main} branch: \texttt{git merge feature-1}
+        \item Push the merged changes: \texttt{git push origin main}
+    \end{itemize}
+
+    \item \textbf{Merge feature-2 and Handle Conflict:}
+    \begin{itemize}
+        \item Merge \texttt{feature-2} into \texttt{main}: \texttt{git merge feature-2}
+        \item Git will notify you of a merge conflict in \texttt{shared.txt}.
+        \item Open \texttt{shared.txt} in your text editor and resolve the conflict by choosing the appropriate changes or combining them.
+        \item After resolving, stage the resolved file: \texttt{git add shared.txt}
+        \item Commit the merge: \texttt{git commit -m "Merge feature-2 into main and resolve conflicts"}
+        \item Push the resolved main branch to GitHub: \texttt{git push origin main}
+    \end{itemize}
+
+    \item \textbf{Clean Up Branches:}
+    \begin{itemize}
+        \item Delete both \texttt{feature-1} and \texttt{feature-2} branches locally:
+        \begin{verbatim}
+git branch -d feature-1
+git branch -d feature-2
+        \end{verbatim}
+        \item Delete the branches on GitHub:
+        \begin{verbatim}
+git push origin --delete feature-1
+git push origin --delete feature-2
+        \end{verbatim}
+    \end{itemize}
+\end{enumerate}
+
+\newpage
+\section{LaTeX Assignments}
+
+\subsection{Lab Assignment 1: Create a LaTeX Document}
+
+\textbf{Task:} Your task is to create a LaTeX document. The document should be formatted to look exactly like the provided attachment.
+
+\subsubsection*{Procedure}
+\begin{enumerate}[label=\arabic*.]
+    \item \textbf{Prepare the Document:}
+    \begin{itemize}
+        \item Open your LaTeX editor (Overleaf, TeXShop, or similar).
+        \item Create a new document and ensure it matches the formatting of the given attachment.
+    \end{itemize}
+    
+    \item \textbf{Document Naming Convention:}
+    \begin{itemize}
+        \item When your LaTeX document is complete, name it according to the following rule: \texttt{Rollno\_DeptName\_Firstname.tex}.
+        \item This file should contain your LaTeX code.
+    \end{itemize}
+    
+    \item \textbf{Create Output and Zip Files:}
+    \begin{itemize}
+        \item Compile your LaTeX document to generate the output file in PDF format.
+        \item Include an image file (either \texttt{.png} or \texttt{.jpg}) that should be inserted into your LaTeX document.
+        \item Create a zip file containing the following three files:
+        \begin{itemize}
+            \item Your source code: \texttt{Rollno\_DeptName\_Firstname.tex}
+            \item Your compiled output: \texttt{Rollno\_DeptName\_Firstname.pdf}
+            \item Your image file: \texttt{.png} or \texttt{.jpg}
+        \end{itemize}
+        \item Name the zip file as \texttt{Rollno\_DeptName\_Firstname.zip}.
+    \end{itemize}
+\end{enumerate}
+
+\subsubsection*{Deliverables}
+You need to upload the zip file containing:
+\begin{itemize}
+    \item Your LaTeX source code (\texttt{.tex})
+    \item The compiled PDF output
+    \item An image file (\texttt{.png} or \texttt{.jpg})
+\end{itemize}
+\newpage
+\subsection{Lab Assignment 2: Create a CV Using LaTeX}
+
+\textbf{Task:} Create a CV using a LaTeX document.
+
+\subsubsection*{Procedure}
+\begin{enumerate}[label=\arabic*.]
+    \item \textbf{Outline Your CV Content:}
+    \begin{itemize}
+        \item Include your name, contact details, and a professional summary.
+        \item List academic qualifications, work experience, skills, projects, and certifications.
+    \end{itemize}
+
+    \item \textbf{Decide on the Structure and Layout:}
+    \begin{itemize}
+        \item Organize the CV into sections such as Personal Information, Experience, Education, etc.
+    \end{itemize}
+
+    \item \textbf{Choose a LaTeX Template:}
+    \begin{itemize}
+        \item Select a template that suits your style from Overleaf or a LaTeX library.
+    \end{itemize}
+
+    \item \textbf{Customize the Template:}
+    \begin{itemize}
+        \item Edit the template with your personal content (experience, qualifications, etc.).
+    \end{itemize}
+
+    \item \textbf{Adjust Formatting:}
+    \begin{itemize}
+        \item Ensure consistency in fonts and section headings.
+    \end{itemize}
+
+    \item \textbf{Proofread and Finalize:}
+    \begin{itemize}
+        \item Review for any errors or formatting issues.
+        \item Ensure alignment and organization of sections.
+    \end{itemize}
+
+    \item \textbf{Compile and Export:}
+    \begin{itemize}
+        \item Compile the LaTeX document and export it as a PDF for sharing.
+    \end{itemize}
+\end{enumerate}
+
+\subsubsection*{Deliverables}
+You need to upload the final CV in PDF format, created using LaTeX.
+\section{Conclusion}
+
+Throughout the lab assignments, we gained hands-on experience in several crucial aspects of software development and collaboration using Git and LaTeX. By working on tasks such as building a calculator program, modifying an existing application, handling Git branching and conflict resolution, and creating a CV using LaTeX, we strengthened our technical proficiency in C programming, version control, and document preparation.
+
+The process of resolving merge conflicts, in particular, provided valuable insights into collaborative development and how proper Git workflows can prevent and address issues that arise when multiple team members work on the same project. Moreover, the task of customizing a LaTeX CV highlighted the advantages of using LaTeX for professional document preparation, given its flexibility and control over formatting.
+
+These experiences not only enhanced our understanding of the technical concepts but also fostered teamwork, problem-solving, and critical thinking, which will be beneficial for future projects and professional work environments. We look forward to applying these skills to more complex and collaborative projects in the future.
 
 
 \end{document}
